@@ -1,0 +1,38 @@
+.carousel {
+    display: block;
+}
+
+
+.img__slider {
+    position: relative;
+    width: 100vw;
+    height: 400px;
+}
+.img__slider .slider__container {
+    position: absolute;
+    width: 300%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    animation: slider 16s infinite;
+}
+.img__slider .slider__container .slide {
+    position: relative;
+    width: 33.33333333%;
+    height: 100%;
+    float: left;
+    overflow: hidden
+}
+.img__slider .slider__container .slide img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+@keyframes slider {
+    0%, 25%, 100%{left: 0}
+    
+    30%, 55%{left: -100%}
+    
+    60%, 85%{left: -200%}
+}
